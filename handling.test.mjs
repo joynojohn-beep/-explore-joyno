@@ -1,0 +1,9 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {ArcadeHandling} from '../src/handling.ts';
+const idle={forward:false,reverse:false,left:false,right:false,brake:false};
+const step=(car,input,seconds,dt=1/60)=>{for(let t=0;t<seconds-dt/2;t+=dt)car.update({...idle,...input},dt)};
+test('throttle builds progressively, limits cruising speed, and release stops rolling',()=>{const car=new ArcadeHandling();car.update({...idle,forward:true},1/60);assert.ok(car.speed>0&&car.speed<.1);step(car,{forward:true},1);assert.ok(car.speed>4&&car.speed<6);step(car,{forward:true},4);assert.ok(car.speed<=6.5&&car.speed>6.4);step(car,{},1.2);assert.equal(car.speed,0)});
+test('braking stops promptly and reverse cannot instantly flip momentum',()=>{const car=new ArcadeHandling();step(car,{forward:true},3);car.update({...idle,reverse:true},1/60);assert.ok(car.speed>0);step(car,{reverse:true},2);assert.ok(car.speed<0&&car.speed>=-2.4);step(car,{brake:true},.6);assert.equal(car.speed,0);step(car,{forward:true},3);step(car,{brake:true},.7);assert.equal(car.speed,0)});
+test('steering eases in, limits high-speed turns and centers after release',()=>{const car=new ArcadeHandling();step(car,{forward:true},3);const angle=car.angle;car.update({...idle,forward:true,left:true},1/60);assert.ok(car.steering>0&&car.steering<.15);assert.ok(car.angle-angle<.005);step(car,{forward:true,left:true},1);assert.ok(car.angle-angle>.5&&car.angle-angle<1.5);step(car,{forward:true},.4);assert.ok(Math.abs(car.steering)<.01);car.reset();assert.equal(car.speed,0);assert.equal(car.steering,0);assert.equal(car.angle,Math.PI/2)});
+test('handling is consistent at different update rates',()=>{const a=new ArcadeHandling(),b=new ArcadeHandling();step(a,{forward:true,left:true},2,1/60);step(b,{forward:true,left:true},2,1/30);assert.ok(Math.abs(a.speed-b.speed)<.05);assert.ok(Math.abs(a.angle-b.angle)<.06)});

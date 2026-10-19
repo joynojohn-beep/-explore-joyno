@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://explore-joyno.gino163535.chatgpt.site/sitemap.xml
