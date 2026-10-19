@@ -1,0 +1,6 @@
+1. Extract this ZIP.
+2. In GitHub joynojohn-beep/-explore-joyno, upload index.html to the repository top level and commit.
+3. Open the public folder in GitHub. Upload favicon.svg, favicon.ico, favicon-32.png and apple-touch-icon.png from this ZIP public folder, replacing existing files, and commit.
+4. Vercel rebuilds automatically. Wait for the newest deployment to show Ready.
+5. Refresh explore-joyno.vercel.app. Reopen the browser tab if an old icon remains cached.
+This is a prepared update, not a confirmation of GitHub publication or Vercel deployment.
