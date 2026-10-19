@@ -1,0 +1,10 @@
+import {chromium} from 'playwright';
+const browser=await chromium.launch({headless:true,channel:'chrome'});
+const page=await browser.newPage({viewport:{width:1440,height:1000}});
+page.on('pageerror',e=>console.log('ERROR',e.message));
+await page.goto(process.env.PREVIEW_ORIGIN||'http://127.0.0.1:5173/');
+await page.waitForFunction(()=>window.joynoDiagnostics?.ready,{timeout:30000});
+await page.waitForTimeout(1800);await page.screenshot({path:'desktop.png'});
+console.log(await page.evaluate(()=>window.joynoDiagnostics));
+await page.setViewportSize({width:390,height:844});await page.waitForTimeout(1000);await page.screenshot({path:'mobile.png'});
+await browser.close();
