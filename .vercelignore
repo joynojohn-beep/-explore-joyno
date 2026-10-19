@@ -1,0 +1,14 @@
+.git
+.openai
+node_modules
+dist
+*.zip
+*.tar.gz
+*-source.html
+*-desktop.png
+*-mobile.png
+desktop.png
+mobile.png
+ux-*.png
+test-results
+playwright-report

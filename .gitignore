@@ -1,0 +1,16 @@
+node_modules/
+.vercel/
+.env*
+!.env.example
+dist/
+*.zip
+test-results/
+playwright-report/
+brand-source.html
+.sites-workflow/
+/desktop.png
+/mobile.png
+/gallery-*.png
+/realistic-*.png
+/ux-*.png
+*.tar.gz
