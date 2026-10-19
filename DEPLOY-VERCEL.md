@@ -1,5 +1,7 @@
 # Deploy Explore JOYNO to Vercel
 
+Latest account check: the Vercel connection can access the existing JOYNO team, but project creation was rejected with HTTP 403 (no permission to create a project). Ask a JOYNO administrator to grant project creation rights, or create explore-joyno and grant you deployment access. Reconnecting alone is not known to resolve this permission error.
+
 This package contains the complete editable TypeScript, Three.js world, client data, CSS, original audio generator, public images, tests, pinned npm lockfile and build scripts. It does not depend on ChatGPT hosting, login, APIs or source retrieval. Git history, credentials, node_modules, generated screenshots and the former hosting account ID are excluded from the ZIP.
 
 ## Requirements and cost
@@ -35,8 +37,8 @@ Select your existing JOYNO team. This export does not create a team or change an
    | Project Name | explore-joyno (if available) |
    | Framework Preset | Vite |
    | Root Directory | ./ |
-   | Install Command | npm ci |
-   | Build Command | npm run build |
+   | Install Command | node vercel-npm.mjs ci |
+   | Build Command | node vercel-npm.mjs run build |
    | Output Directory | dist |
    | Node.js Version | 24.x |
    | Environment variables | None required |

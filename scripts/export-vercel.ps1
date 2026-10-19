@@ -8,7 +8,7 @@ $files=@()
 foreach($folder in @('src','public','scripts','tests')){
  $files+=Get-ChildItem -LiteralPath (Join-Path $projectRoot $folder) -File -Recurse
 }
-foreach($name in @('index.html','package.json','package-lock.json','tsconfig.json','vite.config.ts','vercel.json','.vercelignore','.gitignore','.env.example')){
+foreach($name in @('index.html','package.json','package-lock.json','tsconfig.json','vite.config.ts','vercel.json','vercel-npm.mjs','.vercelignore','.gitignore','.env.example')){
  $files+=Get-Item -LiteralPath (Join-Path $projectRoot $name)
 }
 $files+=Get-ChildItem -LiteralPath $projectRoot -Filter '*.md' -File

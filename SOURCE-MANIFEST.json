@@ -1,214 +1,250 @@
 [
   {
-    "path": ".env.example",
-    "sha256": "2046e7fdac9c9a7c7ba41498c6a461004f48d5beeab5fbb7744298742f1f7570"
+    "sha256": "2046e7fdac9c9a7c7ba41498c6a461004f48d5beeab5fbb7744298742f1f7570",
+    "path": ".env.example"
   },
   {
-    "path": ".gitignore",
-    "sha256": "6ffe9b29491c0e511d838c7a08d2d83848bcd7d75523ee440e397404b7ea8755"
+    "sha256": "04785091731b90d7bb87e2eddf0863c30927b3f751a62e80fdcd368f41db2dcd",
+    "path": ".gitignore"
   },
   {
-    "path": ".vercelignore",
-    "sha256": "d2d17a3474df5de58b42b830be2a20f17041155909b550395601b5d466664bd5"
+    "sha256": "d2d17a3474df5de58b42b830be2a20f17041155909b550395601b5d466664bd5",
+    "path": ".vercelignore"
   },
   {
-    "path": "ASSETS.md",
-    "sha256": "da9afe55ee1909bfa008e231bb373eb0c67314c3cddd8e0abd917610896445fb"
+    "sha256": "9eb8977951c7d363fda8aa4f968816710c5eab3a8582c730e7812b4e6ffd5f9a",
+    "path": "ASSETS.md"
   },
   {
-    "path": "CLIENTS.md",
-    "sha256": "07123e26ddb33eb4793d7c22008cfbb3c53ba98449dc16126104f982c9c8f713"
+    "sha256": "07123e26ddb33eb4793d7c22008cfbb3c53ba98449dc16126104f982c9c8f713",
+    "path": "CLIENTS.md"
   },
   {
-    "path": "DEPLOY-VERCEL.md",
-    "sha256": "6dc9667a323e13abb59cc2cc7c4469e3830f1166af26eaeef540dc751a615c56"
+    "sha256": "0d27e2320c673ad58b2f991a7360b8e179fbe4fc01bb6381b79ea6649ced9be7",
+    "path": "DEPLOY-VERCEL.md"
   },
   {
-    "path": "DRIVING.md",
-    "sha256": "3b848213f74db3918732e47675a23f046ffe8a5ef04dce8888ce90a32247c560"
+    "sha256": "3b848213f74db3918732e47675a23f046ffe8a5ef04dce8888ce90a32247c560",
+    "path": "DRIVING.md"
   },
   {
-    "path": "index.html",
-    "sha256": "65c72b76298632d85d568cae40e516c822ecd55aae9effd4db3d547cf6b5e272"
+    "sha256": "b12526f4bac5ac4d9b92b83ef3d1482b0669d44db8bf0234749b67e574c7ddd1",
+    "path": "index.html"
   },
   {
-    "path": "package-lock.json",
-    "sha256": "96c8a90de2a3f84e8ea3e23369074ef074cf87b9b7ded05295cd90f1ac82bf30"
+    "sha256": "9a254789f8719aebe7e29a313d86f8b959745c4884d86890252fad74f13a622c",
+    "path": "MOTION-VERIFICATION.md"
   },
   {
-    "path": "package.json",
-    "sha256": "fd0802d78ed2d464609e8a033501893391521e2362f7d2b6193f0e94c9405a07"
+    "sha256": "f6fa121476201e1547519a526a9b7e8e6c0e93bbfa0420858aabe636a28df7e9",
+    "path": "MOTION.md"
   },
   {
-    "path": "PLAZA.md",
-    "sha256": "e2e498afa43ce443ddfe3769bcaf5dd10f1fc036e064e8a91e026b5553715158"
+    "sha256": "96c8a90de2a3f84e8ea3e23369074ef074cf87b9b7ded05295cd90f1ac82bf30",
+    "path": "package-lock.json"
   },
   {
-    "path": "public/assets/joyno-logo.png",
-    "sha256": "efd92f0c822c6fa4ed7f22aef80de7df4adb846595a9cdf153b9b0054b0165ef"
+    "sha256": "fd0802d78ed2d464609e8a033501893391521e2362f7d2b6193f0e94c9405a07",
+    "path": "package.json"
   },
   {
-    "path": "public/favicon.svg",
-    "sha256": "537dd638e6733694415991f1e760c015050c5e33aa71a94f465e94505431fd19"
+    "sha256": "e2e498afa43ce443ddfe3769bcaf5dd10f1fc036e064e8a91e026b5553715158",
+    "path": "PLAZA.md"
   },
   {
-    "path": "public/preview.png",
-    "sha256": "9c12d58322d4105c1c97b32cb34600bb274ea46313c89ff518360bf6b69b86ad"
+    "sha256": "d3755a00d56dec2c3bc62f3a97a04f78b5c335623111fd4dfec2449d88ad5627",
+    "path": "public/apple-touch-icon.png"
   },
   {
-    "path": "public/preview.svg",
-    "sha256": "74619eedd5784710b335ce84877d97dcdda43e5de58b622e2a937176967722ce"
+    "sha256": "efd92f0c822c6fa4ed7f22aef80de7df4adb846595a9cdf153b9b0054b0165ef",
+    "path": "public/assets/joyno-logo.png"
   },
   {
-    "path": "public/robots.txt",
-    "sha256": "766f8233c14bb58d762d7978239d8fdfe8caa7a22c1bcdec579e940632730c27"
+    "sha256": "4df76dcc6074f26359ff9ce18e7db383fce9872d9459244942277937d8311827",
+    "path": "public/favicon-32.png"
   },
   {
-    "path": "public/sitemap.xml",
-    "sha256": "edc3792a9447825ffc23a26cb80abd43e50952ab106e0a58944b1bf9c22a3e82"
+    "sha256": "a47f9fbe77e80e9d322eade864c12e2abda54c1cbd26220122b309d0385a529a",
+    "path": "public/favicon.ico"
   },
   {
-    "path": "README.md",
-    "sha256": "924c0583b1d985f23fe61a7ac4cf6ffad1e83289d0477c5b2f27adc73dc925c0"
+    "sha256": "79618aae40db48b1d703656dbce68a77e177084659f7f0c23b3e8d8086fd7330",
+    "path": "public/favicon.svg"
   },
   {
-    "path": "scripts/capture.mjs",
-    "sha256": "9edf96b2527633bb0ce8fee2a0d0e29c9e638757c8891b1adc7712c51b2cb8c1"
+    "sha256": "9c12d58322d4105c1c97b32cb34600bb274ea46313c89ff518360bf6b69b86ad",
+    "path": "public/preview.png"
   },
   {
-    "path": "scripts/export-vercel.ps1",
-    "sha256": "7537229b28d4edad7781db9a60b824574e69bdc396a578fae44a25a9422d12c5"
+    "sha256": "74619eedd5784710b335ce84877d97dcdda43e5de58b622e2a937176967722ce",
+    "path": "public/preview.svg"
   },
   {
-    "path": "scripts/media.mjs",
-    "sha256": "637a50906cc0e87355141dafcc0a32d4136dfc9f068f0b301eab9b533adc4e31"
+    "sha256": "766f8233c14bb58d762d7978239d8fdfe8caa7a22c1bcdec579e940632730c27",
+    "path": "public/robots.txt"
   },
   {
-    "path": "scripts/prerender.mjs",
-    "sha256": "82b0f0181669379909fab2b87aa6042fc3b6452d4dd13cc757c59b2036506a04"
+    "sha256": "edc3792a9447825ffc23a26cb80abd43e50952ab106e0a58944b1bf9c22a3e82",
+    "path": "public/sitemap.xml"
   },
   {
-    "path": "scripts/realism-qa.mjs",
-    "sha256": "a54d31e16063c162a32d04a8d8195ac12d2c085097985691f3915108548f20ca"
+    "sha256": "924c0583b1d985f23fe61a7ac4cf6ffad1e83289d0477c5b2f27adc73dc925c0",
+    "path": "README.md"
   },
   {
-    "path": "src/audio.ts",
-    "sha256": "2f72790faaeda78493c367f57915458e9361e70a5e8b36cbc4ec65867aec37b5"
+    "sha256": "9edf96b2527633bb0ce8fee2a0d0e29c9e638757c8891b1adc7712c51b2cb8c1",
+    "path": "scripts/capture.mjs"
   },
   {
-    "path": "src/camera-navigation.ts",
-    "sha256": "37c3370c7587f432f2e6e0ee82317faad38ef7e096647ea1609c3e9ac17ac325"
+    "sha256": "02381bd6dca03ec2f398de99202405ba08c1f2e35e3af2763da2af6241196700",
+    "path": "scripts/export-vercel.ps1"
   },
   {
-    "path": "src/clients.ts",
-    "sha256": "fd8f7c44ca852d8992f429e6700597b4d547d923f176cdab95ea972444c4ce4a"
+    "sha256": "637a50906cc0e87355141dafcc0a32d4136dfc9f068f0b301eab9b533adc4e31",
+    "path": "scripts/media.mjs"
   },
   {
-    "path": "src/content.ts",
-    "sha256": "9fa8a18dea9c6b730bd9cd17b6f4679bc78729c7940193335a6364a1fc876d7f"
+    "sha256": "82b0f0181669379909fab2b87aa6042fc3b6452d4dd13cc757c59b2036506a04",
+    "path": "scripts/prerender.mjs"
   },
   {
-    "path": "src/handling.ts",
-    "sha256": "fe6218411b4d07e8526529f3b058feb71ce77478f6e773c0c88b4e43bd073cbe"
+    "sha256": "a54d31e16063c162a32d04a8d8195ac12d2c085097985691f3915108548f20ca",
+    "path": "scripts/realism-qa.mjs"
   },
   {
-    "path": "src/main.ts",
-    "sha256": "f000bad794373414dd34bcd14f27972949cee831461177facc1a7b2153e65ffc"
+    "sha256": "2f72790faaeda78493c367f57915458e9361e70a5e8b36cbc4ec65867aec37b5",
+    "path": "src/audio.ts"
   },
   {
-    "path": "src/playground.css",
-    "sha256": "23d0a1cfc463aa967d9eb61ae0839152829f6674cf1609175ce0c0a00f5a6b3a"
+    "sha256": "37c3370c7587f432f2e6e0ee82317faad38ef7e096647ea1609c3e9ac17ac325",
+    "path": "src/camera-navigation.ts"
   },
   {
-    "path": "src/plaza.ts",
-    "sha256": "9595f60bc54f301ec41d94276e0a193cb718abedf96fdb413beedd119268a19e"
+    "sha256": "fd8f7c44ca852d8992f429e6700597b4d547d923f176cdab95ea972444c4ce4a",
+    "path": "src/clients.ts"
   },
   {
-    "path": "src/realism.ts",
-    "sha256": "049eda6f7d16ab4aa50c359af6017af314c371d9e7ae296c3f2d48c58d706b1e"
+    "sha256": "9fa8a18dea9c6b730bd9cd17b6f4679bc78729c7940193335a6364a1fc876d7f",
+    "path": "src/content.ts"
   },
   {
-    "path": "src/responsive.css",
-    "sha256": "2544e0828a50e476de096c4a65e1a43b2bcaec63b391c1c04569276223447022"
+    "sha256": "fe6218411b4d07e8526529f3b058feb71ce77478f6e773c0c88b4e43bd073cbe",
+    "path": "src/handling.ts"
   },
   {
-    "path": "src/style.css",
-    "sha256": "ee8fa7e50368166cb5b9016b22e4d1d38803f0cc18d232da656b87f7a1704d08"
+    "sha256": "22d7ec273a0f2a7e6e49d5f42a2a7fc4b3cf8d4e829b85f19a4a0d897cfbc346",
+    "path": "src/main.ts"
   },
   {
-    "path": "src/town.ts",
-    "sha256": "abf0aef91628bd669da356bfc332d6636a4dfe82bc5b036493480563e85cd640"
+    "sha256": "0255794350182bc29751541afacb620853c1d7015aea6d76781b9721c56292d9",
+    "path": "src/motion.css"
   },
   {
-    "path": "src/views.ts",
-    "sha256": "974d46e3d99401914f514711cece38eab74846af05abc368f444ef19be2cb38e"
+    "sha256": "ddf44941789537eec253bfd867e3598b3ea67e767cf5938d2314c3e0e1f79621",
+    "path": "src/motion.ts"
   },
   {
-    "path": "src/world.ts",
-    "sha256": "c9f07789e5676c20191483795fc7a7301ce9356e0a74229eb64b77a7f4c320e9"
+    "sha256": "23d0a1cfc463aa967d9eb61ae0839152829f6674cf1609175ce0c0a00f5a6b3a",
+    "path": "src/playground.css"
   },
   {
-    "path": "tests/audio.test.mjs",
-    "sha256": "db8dedc7e4337f2b2c807c6586b06e97b6ea71bc93f482996f6847c8f51ee860"
+    "sha256": "9595f60bc54f301ec41d94276e0a193cb718abedf96fdb413beedd119268a19e",
+    "path": "src/plaza.ts"
   },
   {
-    "path": "tests/camera-navigation.test.mjs",
-    "sha256": "1663d3341526d4223c76e5d5afc859518dc963b1f8b8f595fb9bdcd26da700c7"
+    "sha256": "049eda6f7d16ab4aa50c359af6017af314c371d9e7ae296c3f2d48c58d706b1e",
+    "path": "src/realism.ts"
   },
   {
-    "path": "tests/clients.test.mjs",
-    "sha256": "dc32047e87d653262edbc8bd0d22215318ece946519e25bf3dbccb3323d9e51b"
+    "sha256": "2544e0828a50e476de096c4a65e1a43b2bcaec63b391c1c04569276223447022",
+    "path": "src/responsive.css"
   },
   {
-    "path": "tests/driving.test.mjs",
-    "sha256": "c9fbd866e5fff943bf51badab703f59d96969834f9d0dfbd7f6097b6ea0a6a26"
+    "sha256": "ee8fa7e50368166cb5b9016b22e4d1d38803f0cc18d232da656b87f7a1704d08",
+    "path": "src/style.css"
   },
   {
-    "path": "tests/experience.test.mjs",
-    "sha256": "5e7af3fa6c11ae2c7ef5d9786daef24edec629814ea4aee9264a21c7ca8c3892"
+    "sha256": "abf0aef91628bd669da356bfc332d6636a4dfe82bc5b036493480563e85cd640",
+    "path": "src/town.ts"
   },
   {
-    "path": "tests/handling.test.mjs",
-    "sha256": "56749981935a6206ec783496f2de945a74ad0e6e2e35a15974e2ae659ee172df"
+    "sha256": "974d46e3d99401914f514711cece38eab74846af05abc368f444ef19be2cb38e",
+    "path": "src/views.ts"
   },
   {
-    "path": "tests/playground.test.mjs",
-    "sha256": "049a65d2c9bd9c0abab0f2e81f14ecb3b7cbd4e11f48d2416b1f0840472ec817"
+    "sha256": "c9f07789e5676c20191483795fc7a7301ce9356e0a74229eb64b77a7f4c320e9",
+    "path": "src/world.ts"
   },
   {
-    "path": "tests/responsive.test.mjs",
-    "sha256": "567e511d61d7ec2032bc1faafcfa9ba2c77f9700bb62a1a0c731645d9af6743b"
+    "sha256": "db8dedc7e4337f2b2c807c6586b06e97b6ea71bc93f482996f6847c8f51ee860",
+    "path": "tests/audio.test.mjs"
   },
   {
-    "path": "tests/static.test.mjs",
-    "sha256": "4ebf286aba238c777ab52ee6f136ec40b2b255c273a8c1aaf1dcdbcecddedff3"
+    "sha256": "1663d3341526d4223c76e5d5afc859518dc963b1f8b8f595fb9bdcd26da700c7",
+    "path": "tests/camera-navigation.test.mjs"
   },
   {
-    "path": "tests/town.test.mjs",
-    "sha256": "d28bd78f062a2d27f14b0ca7c20a5dfe7e230d71102f92477d8cbfc957a197eb"
+    "sha256": "dc32047e87d653262edbc8bd0d22215318ece946519e25bf3dbccb3323d9e51b",
+    "path": "tests/clients.test.mjs"
   },
   {
-    "path": "tsconfig.json",
-    "sha256": "593c2b2bbbaf5f162f99efab4c5a9d1409bf046046bcf47b2276fbffd8ff6027"
+    "sha256": "c9fbd866e5fff943bf51badab703f59d96969834f9d0dfbd7f6097b6ea0a6a26",
+    "path": "tests/driving.test.mjs"
   },
   {
-    "path": "UX.md",
-    "sha256": "317b7487e3311011a0a3fc845b8d64bff8caa6e9d765beb8be564f9b5a968ae0"
+    "sha256": "d40f11918d9339b6955ee98253b609afbccc11bb57133e6e648aef7445d3c4a4",
+    "path": "tests/experience.test.mjs"
   },
   {
-    "path": "VERCEL-VERIFICATION.md",
-    "sha256": "4afa9c04ee8c8eec8a841457d9363aa79c77b360a8856f680cdd1b6860a19811"
+    "sha256": "56749981935a6206ec783496f2de945a74ad0e6e2e35a15974e2ae659ee172df",
+    "path": "tests/handling.test.mjs"
   },
   {
-    "path": "vercel.json",
-    "sha256": "9591cd7a50c6da9da7c702152a637fe084d9a1d8c719e8c4cd12f9e3fc065010"
+    "sha256": "bcf9dd5af96ecf484d2e856c093bbcad6963ab7776364347a747b3284086eab8",
+    "path": "tests/motion.test.mjs"
   },
   {
-    "path": "VERIFICATION.md",
-    "sha256": "b1533682a1ce2b3983bba76ab63a275d6b9eaabee86d3d656268c90928aec30e"
+    "sha256": "049a65d2c9bd9c0abab0f2e81f14ecb3b7cbd4e11f48d2416b1f0840472ec817",
+    "path": "tests/playground.test.mjs"
   },
   {
-    "path": "vite.config.ts",
-    "sha256": "e8aad7e1aeffa7476958943a9566882d91390a3a539d52ab6e6494033164de9f"
+    "sha256": "567e511d61d7ec2032bc1faafcfa9ba2c77f9700bb62a1a0c731645d9af6743b",
+    "path": "tests/responsive.test.mjs"
+  },
+  {
+    "sha256": "4ebf286aba238c777ab52ee6f136ec40b2b255c273a8c1aaf1dcdbcecddedff3",
+    "path": "tests/static.test.mjs"
+  },
+  {
+    "sha256": "d28bd78f062a2d27f14b0ca7c20a5dfe7e230d71102f92477d8cbfc957a197eb",
+    "path": "tests/town.test.mjs"
+  },
+  {
+    "sha256": "593c2b2bbbaf5f162f99efab4c5a9d1409bf046046bcf47b2276fbffd8ff6027",
+    "path": "tsconfig.json"
+  },
+  {
+    "sha256": "317b7487e3311011a0a3fc845b8d64bff8caa6e9d765beb8be564f9b5a968ae0",
+    "path": "UX.md"
+  },
+  {
+    "sha256": "34eae37b8f6cd1487a20272685c156aafd71af8d5ff04c43f49a7d8910204a1f",
+    "path": "vercel-npm.mjs"
+  },
+  {
+    "sha256": "f1ac865e5984448afe078a83dc93b41aaa72c3ba81bc2dd458bfc64e6d335aae",
+    "path": "VERCEL-VERIFICATION.md"
+  },
+  {
+    "sha256": "61138b553bb699085970121c05c5a3f1e4b5e0487d97d1bd8bde99344da19786",
+    "path": "vercel.json"
+  },
+  {
+    "sha256": "b1533682a1ce2b3983bba76ab63a275d6b9eaabee86d3d656268c90928aec30e",
+    "path": "VERIFICATION.md"
+  },
+  {
+    "sha256": "ecd3efdd301219dac2aaaecd1eb7470145f4a8ff853ef25cea633e50ea33b2c6",
+    "path": "vite.config.ts"
   }
 ]
