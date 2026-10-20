@@ -10,6 +10,8 @@ The header uses the supplied React Bits GooeyNav with the same React runtime as 
 
 The desktop pointer now uses the supplied React Bits SwarmCursor, with click bursts and native cursor fallbacks. See [SWARM-CURSOR.md](SWARM-CURSOR.md) and [SWARM-UPLOAD.md](SWARM-UPLOAD.md).
 
+The standard portfolio has a colorful React Bits Ballpit background. See [BALLPIT.md](BALLPIT.md) and [BALLPIT-UPLOAD.md](BALLPIT-UPLOAD.md).
+
 ## Run
 
 Requires Node.js 24+ and npm. Developed on Windows 11 with Node 24.21.0.
@@ -91,4 +93,5 @@ Tests use locally installed Google Chrome via Playwright. Set up Chrome before r
 ## Before public launch
 
 Provide approved project media and accurate case-study details; approve the proposed process copy; connect contact delivery if desired; replace provisional art colors if brand guidance differs; test on actual mid-range iOS/Android devices and with a screen reader; update final-domain SEO and redirects. The Site is public at the user's request.
+
 

@@ -1,0 +1,8 @@
+.ballpit-background{position:fixed;inset:0;z-index:0;pointer-events:none!important;overflow:hidden;background:linear-gradient(135deg,#faf6ff,#fff9e5 60%,#edf9f2)}
+.ballpit-background *{pointer-events:none!important}
+body.is-standard #portfolio{position:relative;isolation:isolate;background:transparent}
+body.is-standard #portfolio>.standard-hero,body.is-standard #portfolio>.standard-section,body.is-standard #portfolio>.standard-footer{position:relative;z-index:1}
+body.is-standard .standard-hero{background:#fff2a5ed;margin:24px auto;border:1px solid #25213c30;border-radius:22px;width:calc(100% - 48px);max-width:1200px}
+body.is-standard .standard-section{box-shadow:0 12px 40px #25213c09}
+@media(max-width:700px){body.is-standard .standard-hero{width:calc(100% - 24px);margin:12px auto}body.is-standard .standard-section{margin:18px 12px}}
+@media(prefers-reduced-motion:reduce){.ballpit-background{display:none}}
