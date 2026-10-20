@@ -5,6 +5,7 @@ import {AudioEngine} from './audio';
 import {initMotion} from './motion';
 import {initGalleryCarousel} from './gallery-carousel';
 import {initHeaderNavigation} from './header-navigation';
+import {initSwarmPointer} from './swarm-navigation';
 
 const $=<T extends HTMLElement>(s:string)=>document.querySelector<T>(s)!;
 const panel=$<HTMLDialogElement>('#panel'),content=$('#panel-content'),scene=$('#scene'),portfolio=$('#portfolio'),experience=$('#experience'),interaction=$<HTMLButtonElement>('#interaction'),audio=new AudioEngine();
@@ -13,6 +14,7 @@ if(!portfolio.children.length)portfolio.innerHTML=standardHTML();
 try{initMotion()}catch{document.documentElement.classList.remove('reticle-active');console.warn('Decorative motion unavailable; standard navigation remains active.')}
 initGalleryCarousel();
 initHeaderNavigation();
+initSwarmPointer();
 const stopLinks=$('#destination-links');stopLinks.innerHTML=destinations.map(d=>`<a class="stop-link" data-stop="${d.id}" href="#${d.id}" aria-label="${escapeHTML(d.name)}" title="${escapeHTML(d.name)}"><span class="stop-number" aria-hidden="true">${d.number}</span><span class="stop-label">${escapeHTML(d.name)}</span><span class="stop-short" aria-hidden="true">${({home:"Start",about:"Studio",work:"Work",services:"Services",process:"Process",contact:"Contact"} as Record<string,string>)[d.id]}</span><span class="stop-arrow" aria-hidden="true">↗</span></a>`).join('');
 function syncUX(){const route=location.hash.slice(1)||'home';document.querySelectorAll<HTMLAnchorElement>('[data-view]').forEach(a=>a.setAttribute('aria-current',String(a.dataset.view===(standard?'portfolio':'world'))));stopLinks.querySelectorAll<HTMLAnchorElement>('[data-stop]').forEach(a=>{const active=a.dataset.stop===(route.startsWith('project/')?'work':route);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})}
 function highlightStop(id?:string){stopLinks.querySelectorAll<HTMLElement>('[data-stop]').forEach(a=>a.classList.toggle('is-near',a.dataset.stop===id))}

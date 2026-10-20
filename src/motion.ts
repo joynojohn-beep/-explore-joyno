@@ -50,36 +50,7 @@ export function initMotion(){
   });
  }
  register(document);
- const cursor=document.createElement('div');cursor.className='target-cursor';cursor.setAttribute('aria-hidden','true');cursor.innerHTML='<div class="target-trail"><span class="target-ring"></span></div><div class="target-point"><span class="target-dot"></span><span class="target-brackets"><i></i><i></i><i></i><i></i></span><span class="target-pulse"></span><span class="target-label"></span></div>';
- document.body.append(cursor);
- const point=cursor.querySelector<HTMLElement>('.target-point')!,trail=cursor.querySelector<HTMLElement>('.target-trail')!,label=cursor.querySelector<HTMLElement>('.target-label')!;
- let x=0,y=0,ringX=0,ringY=0,pointerFrame=0,scrollFrame=0,magnet:HTMLElement|null=null,target:Element|null=null,hasPoint=false;
- function hideCursor(){cursor.classList.remove('visible');root.classList.remove('reticle-active');hasPoint=false;if(pointerFrame)cancelAnimationFrame(pointerFrame);pointerFrame=0;if(magnet)magnet.style.transform='';magnet=null}
- function cursorAllowed(){return fine.matches&&!reduced.matches&&!document.hidden}
- function drawCursor(){
-  pointerFrame=0;if(!cursorAllowed()||!hasPoint)return hideCursor();
-  point.style.transform=`translate3d(${x}px,${y}px,0)`;
-  ringX+=(x-ringX)*.24;ringY+=(y-ringY)*.24;trail.style.transform=`translate3d(${ringX}px,${ringY}px,0)`;
-  if(Math.abs(x-ringX)+Math.abs(y-ringY)>.12)pointerFrame=requestAnimationFrame(drawCursor);
- }
- document.addEventListener('pointermove',event=>{
-  const el=event.target instanceof Element?event.target:null;
-  if(!cursorAllowed()||event.pointerType==='touch'||!el||el.closest('input,textarea,select,[contenteditable],#scene')||!getSelection()?.isCollapsed)return hideCursor();
-  x=event.clientX;y=event.clientY;if(!hasPoint){ringX=x;ringY=y}hasPoint=true;
-  cursor.classList.add('visible');root.classList.add('reticle-active');
-  const next=el.closest('a,button,summary,[role="button"]');
-  if(next!==target){target=next;cursor.classList.toggle('locked',!!next);const text=next?.matches('.project-open')?'VIEW':next?.matches('[href="#explore"],#explore-button')?'EXPLORE':'';label.textContent=text;cursor.classList.toggle('has-label',!!text)}
-  const nextMagnet=next?.querySelector<HTMLElement>('.magnetic-visual')||null;
-  if(magnet&&magnet!==nextMagnet)magnet.style.transform='';magnet=nextMagnet;
-  if(magnet&&next){const box=next.getBoundingClientRect();magnet.style.transform=`translate(${Math.max(-5,Math.min(5,(x-box.x-box.width/2)*.08))}px,${Math.max(-4,Math.min(4,(y-box.y-box.height/2)*.12))}px)`}
-  if(!pointerFrame)pointerFrame=requestAnimationFrame(drawCursor);
- },{passive:true,signal});
- document.addEventListener('pointerdown',event=>{if(event.pointerType!=='touch'&&cursor.classList.contains('visible'))animate(cursor.querySelector('.target-pulse')!,[{opacity:.65,transform:'scale(.6)'},{opacity:0,transform:'scale(1.65)'}],{duration:300,easing:'ease-out'})},{signal});
- document.addEventListener('pointerout',event=>{if(!event.relatedTarget)hideCursor()},{signal});
- document.addEventListener('selectionchange',()=>{if(!getSelection()?.isCollapsed)hideCursor()},{signal});
- window.addEventListener('blur',hideCursor,{signal});
- document.addEventListener('keydown',event=>{if(event.key==='Tab')hideCursor()},{signal});
- let currentStep=-1;
+ let currentStep=-1,scrollFrame=0;
  function updateScroll(){scrollFrame=0;const isStandard=!portfolio.hidden;const range=Math.max(1,document.documentElement.scrollHeight-innerHeight);
   progress.hidden=!isStandard;progress.style.transform=`scaleX(${Math.max(0,Math.min(1,scrollY/range))})`;document.body.classList.toggle('motion-scrolled',isStandard&&scrollY>35);
   if(isStandard&&fine.matches&&!reduced.matches){glow.style.transform=`translate3d(0,${Math.min(scrollY*.12,36)}px,0)`;
@@ -87,14 +58,13 @@ export function initMotion(){
   }
  }
  const scheduleScroll=()=>{if(!scrollFrame)scrollFrame=requestAnimationFrame(updateScroll)};
- window.addEventListener('scroll',scheduleScroll,{passive:true,signal});window.addEventListener('resize',scheduleScroll,{passive:true,signal});window.addEventListener('hashchange',()=>{hideCursor();scheduleScroll()},{signal});
- function preferences(){hideCursor();if(reduced.matches){animations.forEach(animation=>animation.cancel());animations.clear();glow.style.transform=''}scheduleScroll()}
+ window.addEventListener('scroll',scheduleScroll,{passive:true,signal});window.addEventListener('resize',scheduleScroll,{passive:true,signal});window.addEventListener('hashchange',scheduleScroll,{signal});
+ function preferences(){if(reduced.matches){animations.forEach(animation=>animation.cancel());animations.clear();glow.style.transform=''}scheduleScroll()}
  reduced.addEventListener('change',preferences,{signal});fine.addEventListener('change',preferences,{signal});
- document.addEventListener('visibilitychange',()=>{if(document.hidden)hideCursor()},{signal});
  const observer=new MutationObserver(records=>{for(const record of records){if(record.type==='childList')for(const node of record.addedNodes)if(node instanceof HTMLElement)register(node.parentElement||node);}
-  const parent=panel.open?panel:document.body;if(cursor.parentElement!==parent){hideCursor();parent.append(cursor)}scheduleScroll();
+  scheduleScroll();
  });
  observer.observe(portfolio,{attributes:true,attributeFilter:['hidden'],childList:true,subtree:true});observer.observe(panel,{attributes:true,attributeFilter:['open'],childList:true,subtree:true});
  scheduleScroll();
- window.addEventListener('pagehide',()=>{controller.abort();observer.disconnect();entrances.disconnect();animations.forEach(animation=>animation.cancel());cancelAnimationFrame(pointerFrame);cancelAnimationFrame(scrollFrame);root.classList.remove('reticle-active');cursor.remove();progress.remove();delete root.dataset.motionInitialized},{once:true});
+ window.addEventListener('pagehide',()=>{controller.abort();observer.disconnect();entrances.disconnect();animations.forEach(animation=>animation.cancel());cancelAnimationFrame(scrollFrame);root.classList.remove('reticle-active');progress.remove();delete root.dataset.motionInitialized},{once:true});
 }

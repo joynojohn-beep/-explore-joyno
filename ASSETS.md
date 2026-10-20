@@ -1,5 +1,11 @@
 # Asset inventory
 
+The pointer uses the user-supplied React Bits SwarmCursor, adapted with JOYNO colors and input/accessibility fallbacks under the retained React Bits license. Particles are procedural; no external images are loaded.
+
+The header GooeyNav is also adapted from the React Bits component supplied by the user, under the same retained React Bits license. It creates procedural WebGL droplets and CSS fallback pills; no new image or font assets are required.
+
+The Our Work FlexCarousel is adapted from the React Bits code supplied by the user. Copyright (c) 2026 David Haz; terms are retained in REACT-BITS-LICENSE.md and public/react-bits-license.txt. Its client artwork is generated locally from the existing profile names/initials and palette; no sample stock images are loaded.
+
 | Path / source | Purpose and provenance | Replacement |
 | --- | --- | --- |
 | `public/assets/joyno-logo.png` | Official JOYNO lion site icon downloaded from `https://joynomedia.com/wp-content/uploads/2026/08/joyno-media-site-icon.png-300x300.png?crop=1` on October 16, 2026. Original aspect ratio retained. Used only for this JOYNO portfolio. 51,800 bytes. | Replace with an approved transparent official logo of the same aspect ratio; update dimensions if necessary. |
@@ -15,3 +21,4 @@
 | `src/audio.ts` | Original locally synthesized 19.2-second instrumental loop: chords, melody, bass and light percussion, plus a quiet driving tone. No external recordings or streaming requests. | Preserve tap-to-play, mute, visibility pause and loop behavior. |
 
 No GLB, external texture, photo library or optional distant assets are needed for the first version. Three and Rapier are deferred from standard-portfolio entry. Physics compat includes its WASM encoded in JavaScript and is the largest optional download; inspect production sizes in `VERIFICATION.md`.
+

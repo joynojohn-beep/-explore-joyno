@@ -3,8 +3,8 @@
 The standard portfolio uses the existing cobalt, lemon, mint, coral and lavender palette. No content, client data, business claims or external links are replaced.
 
 - Hero headline lines reveal through short masks, followed by supporting copy and actions. The soft brand glow moves slightly with native scroll. Buttons remain interactive throughout.
-- IntersectionObserver triggers one-time headings, cards and content entrances using the native Web Animations API. No animation library, video, particles or additional WebGL assets are added. The JavaScript increase is approximately 2.4 KB compressed.
-- A desktop precision cursor uses a center dot, four focus brackets and a lightly eased ring. Interactive targets lock the brackets, selected links show VIEW or EXPLORE, and clicks pulse once. Prominent CTA text moves a few pixels inside its stationary link hit area.
+- IntersectionObserver triggers one-time headings, cards and content entrances using the native Web Animations API. These reveal effects use native browser APIs; the separate SwarmCursor uses WebGL particles.
+- The original target reticle has been replaced by React Bits SwarmCursor. See SWARM-CURSOR.md for current pointer behavior. Prominent CTA text still moves a few pixels inside its stationary link hit area.
 - Cursor layers use pointer-events:none, including in native dialog top layers. Native cursors return over inputs, text selections, the driving canvas, keyboard navigation, window exit and inactive tabs. Cursor effects require a fine hovering pointer and a viewport wider than 1050px.
 - A short desktop process story pins a decorative step marker beside the original four workflow steps. Scrolling remains native. Mobile and reduced-motion layouts show a normal document flow without the sticky marker or magnetic behavior.
 - Header styling changes without resizing; a thin progress indicator reflects document scroll. Section anchors standard-about, standard-work, standard-services, standard-process and standard-contact navigate within the portfolio. Dialog closes retain the portfolio scroll position.
@@ -15,3 +15,4 @@ Implementation: src/motion.ts, src/motion.css, plus initialization and anchor ha
 Run the production preview at port 4173, then tests/motion.test.mjs with Google Chrome installed. It covers desktop target locking, pointer transparency, native input cursors, history/anchors, story progress, no overflow, mobile fallback and live reduced-motion behavior. Existing acceptance, client and responsive suites cover the retained experience.
 
 Deployment: upload src/main.ts, src/motion.ts and src/motion.css together to the GitHub repository's src folder, then commit once. Vercel's existing Git connection will rebuild. A prepared local change is not a claim that the Vercel deployment has changed; publication requires repository access.
+

@@ -6,6 +6,10 @@ An original interactive JOYNO MEDIA portfolio: a miniature tropical creative cam
 
 The colorful creative-passport interface is documented in [UX.md](UX.md), with responsive visual styling in `src/playground.css`.
 
+The header uses the supplied React Bits GooeyNav with the same React runtime as the client carousel. See [HEADER-GOOEY.md](HEADER-GOOEY.md) for behavior and [HEADER-UPLOAD.md](HEADER-UPLOAD.md) for deployment steps.
+
+The desktop pointer now uses the supplied React Bits SwarmCursor, with click bursts and native cursor fallbacks. See [SWARM-CURSOR.md](SWARM-CURSOR.md) and [SWARM-UPLOAD.md](SWARM-UPLOAD.md).
+
 ## Run
 
 Requires Node.js 24+ and npm. Developed on Windows 11 with Node 24.21.0.
@@ -26,7 +30,7 @@ npm run preview -- --port 4173
 
 ## Architecture
 
-Vanilla TypeScript + Vite + Three.js + Rapier. One rendering framework, one physics owner, HTML dialogs and forms. No GSAP or React overhead is needed for this experience.
+Vanilla TypeScript + Vite + Three.js + Rapier, with native HTML dialogs and forms. The Our Work section mounts the supplied React Bits FlexCarousel as an isolated, lazy-loaded React + OGL component. The existing HTML grid remains available for static browsing, reduced motion and unsupported WebGL.
 
 - `src/content.ts`: editable company, destinations, services, projects and proposed process data.
 - `src/clients.ts`: all 55 supplied client, company and team profiles, with 244 website and social links. Includes 39 JOYNO MEDIA clients and 12 Casa Amorosa clients; the three company profiles and Gino’s profile are labeled separately.
@@ -87,3 +91,4 @@ Tests use locally installed Google Chrome via Playwright. Set up Chrome before r
 ## Before public launch
 
 Provide approved project media and accurate case-study details; approve the proposed process copy; connect contact delivery if desired; replace provisional art colors if brand guidance differs; test on actual mid-range iOS/Android devices and with a screen reader; update final-domain SEO and redirects. The Site is public at the user's request.
+
