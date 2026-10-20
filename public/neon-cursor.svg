@@ -2,12 +2,8 @@
 <defs>
 <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#150c49"/><stop offset=".4" stop-color="#f638ac"/><stop offset=".7" stop-color="#43124c"/><stop offset="1" stop-color="#ff5dba"/></linearGradient>
 <linearGradient id="face" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#13103e"/><stop offset=".5" stop-color="#39274f"/><stop offset="1" stop-color="#e871a6"/></linearGradient>
-<linearGradient id="blue"><stop stop-color="#06e9ff"/><stop offset=".28" stop-color="#244eff"/><stop offset=".65" stop-color="#170d7c"/><stop offset="1" stop-color="#78c9ff"/></linearGradient>
 <filter id="glow" x="-.3" y="-.3" width="1.6" height="1.6"><feGaussianBlur stdDeviation="1.5"/></filter>
 </defs>
-<path d="M49 65 72 88Q76 92 80 88L86 82 61 56Z" fill="#121365" stroke="#142371" stroke-width="3"/>
-<path d="m49 57 29 27q3 3 6 0l3-5q1-2-2-5L61 49Z" fill="url(#blue)" stroke="#8edcff" stroke-width="2"/>
-<path d="m55 59 23 22q2 2 4-1L61 57Z" fill="#0a16bb" stroke="#37dfff" stroke-width="1.5"/>
 <path d="M8 7Q3 4 6 16L28 88Q31 97 37 91l17-30q3-5 10-5l21 1q10-2 3-10Z" transform="translate(0 7)" fill="url(#edge)" stroke="#210e38" stroke-width="3"/>
 <path d="M8 7Q3 4 6 16L28 88Q31 94 36 86l17-29q3-5 10-5l22 1q9-1 3-6Z" fill="url(#face)" stroke="#210e38" stroke-width="5" stroke-linejoin="round"/>
 <path d="M10 11 84 48Q89 51 83 51l-21-1q-8 0-12 7L34 83q-3 5-5-1L8 16Q6 10 10 11Z" fill="none" stroke="#ff238c" stroke-width="6" filter="url(#glow)"/>
