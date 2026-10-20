@@ -1,3 +1,4 @@
+import './hero-marketing.css';
 import type {CreativeWorld, Quality} from './world';
 import {destinations,company} from './content';
 import {sectionContent,projectDetail,standardHTML,projectCards,filteredProjects,escapeHTML} from './views';
@@ -48,5 +49,6 @@ async function init(){try{const {CreativeWorld}=await import('./world');world=ne
 navigate();syncUX();window.addEventListener('hashchange',syncUX);window.addEventListener('pagehide',()=>{world?.dispose();world=undefined;ready=false;audio.dispose();observer.disconnect()},{once:true});
 // Read-only development diagnostics: no visitor analytics or tracking.
 Object.defineProperty(window,'joynoDiagnostics',{get:()=>({ready,standard,paused:world?.paused,position:world?.position,camera:world?.cameraState,quality:world?.quality,stats:world?.stats})});
+
 
 
