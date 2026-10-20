@@ -8,7 +8,7 @@ The colorful creative-passport interface is documented in [UX.md](UX.md), with r
 
 The header uses the supplied React Bits GooeyNav with the same React runtime as the client carousel. See [HEADER-GOOEY.md](HEADER-GOOEY.md) for behavior and [HEADER-UPLOAD.md](HEADER-UPLOAD.md) for deployment steps.
 
-The desktop pointer now uses the supplied React Bits SwarmCursor, with click bursts and native cursor fallbacks. See [SWARM-CURSOR.md](SWARM-CURSOR.md) and [SWARM-UPLOAD.md](SWARM-UPLOAD.md).
+The desktop pointer now uses the supplied React Bits TargetCursor with rotating brackets and spring target locking. See [TARGET-CURSOR.md](TARGET-CURSOR.md) for behavior and upload instructions.
 
 The standard portfolio has a colorful React Bits Ballpit background. See [BALLPIT.md](BALLPIT.md) and [BALLPIT-UPLOAD.md](BALLPIT-UPLOAD.md).
 
@@ -93,5 +93,6 @@ Tests use locally installed Google Chrome via Playwright. Set up Chrome before r
 ## Before public launch
 
 Provide approved project media and accurate case-study details; approve the proposed process copy; connect contact delivery if desired; replace provisional art colors if brand guidance differs; test on actual mid-range iOS/Android devices and with a screen reader; update final-domain SEO and redirects. The Site is public at the user's request.
+
 
 

@@ -1,0 +1,2 @@
+.target-pointer-host{position:fixed;inset:0;z-index:2147483647;pointer-events:none!important;overflow:hidden;contain:layout style}.target-pointer-host *{pointer-events:none!important}
+@media(hover:none),(pointer:coarse),(max-width:1050px),(prefers-reduced-motion:reduce){.target-pointer-host{display:none!important}}
