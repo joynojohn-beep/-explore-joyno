@@ -1,11 +1,9 @@
 .target-pointer-host{position:fixed;inset:0;z-index:2147483647;pointer-events:none!important;overflow:hidden;contain:layout style}.target-pointer-host *{pointer-events:none!important}
 @media(hover:none),(pointer:coarse),(max-width:1050px),(prefers-reduced-motion:reduce){.target-pointer-host{display:none!important}}
-/* Sculpted orb and orbit: reuse pointer lifecycle and spring click response. */
-.target-pointer-host .target-cursor{filter:drop-shadow(0 4px 5px #25213c44)}
+/* Original vector arrow inspired by the user's neon pointer reference. */
+.target-pointer-host .target-cursor{filter:drop-shadow(1px 3px 2px #150c4944)}
 .target-pointer-host .target-cursor__corner{display:none}
-.target-pointer-host .target-cursor__dot{background:radial-gradient(circle at 28% 22%,#fff 0%,#e3dbff 12%,#a18aff 30%,#5140d9 58%,#21184e 86%);box-shadow:inset -3px -4px 5px #160d5b88,inset 2px 2px 3px #ffffffa0,0 0 0 1px #ffffffb0;overflow:visible;isolation:isolate}
-.target-pointer-host .target-cursor__dot:before{content:'';position:absolute;inset:-8px;border:2px solid #ffe273;border-left-color:#ff9d8d;border-right-color:#9ae4c6;border-radius:50%;box-shadow:0 0 5px #ffe27355;animation:joyno-orbit 2.8s linear infinite;transform-style:preserve-3d}
-.target-pointer-host .target-cursor__dot:after{content:'';position:absolute;width:5px;height:5px;right:-8px;top:7px;border-radius:50%;background:radial-gradient(circle at 30% 25%,white,#ffe273 45%,#c08720);box-shadow:0 1px 3px #25213c55;animation:joyno-satellite 2.8s ease-in-out infinite}
+.target-pointer-host .target-cursor__dot{background:transparent url('/neon-cursor.svg') center/contain no-repeat;border-radius:0;overflow:visible}
+.target-pointer-host .target-cursor__dot:after{content:'';position:absolute;inset:4px 8px 12px 3px;background:transparent;filter:drop-shadow(0 0 4px #ff228b);animation:neon-cursor-glow 2.4s ease-in-out infinite;pointer-events:none;border-radius:30%}
 .target-pointer-host .target-cursor__label{color:#4336cd;background:#fff9e9;border:1px solid #4336cd55;padding:5px 8px;border-radius:8px}
-@keyframes joyno-orbit{0%{transform:perspective(90px) rotateX(60deg) rotateY(-18deg) rotateZ(0deg)}50%{transform:perspective(90px) rotateX(70deg) rotateY(18deg) rotateZ(180deg)}100%{transform:perspective(90px) rotateX(60deg) rotateY(-18deg) rotateZ(360deg)}}
-@keyframes joyno-satellite{0%,100%{transform:translateY(-5px) scale(.8)}50%{transform:translate(-23px,6px) scale(1.1)}}
+@keyframes neon-cursor-glow{0%,100%{opacity:.35;box-shadow:-2px -1px 6px #ff3aaa33}50%{opacity:.85;box-shadow:-2px -1px 9px #ff3aaa66}}

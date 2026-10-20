@@ -233,7 +233,7 @@ const TargetCursor = ({
       const dot = dotRef.current;
       if (dot) {
         const dotScale = 1 - press.x * 0.35;
-        dot.style.transform = `translate3d(${pointer.x}px, ${pointer.y}px, 0) translate(-50%, -50%) scale(${dotScale.toFixed(3)})`;
+        dot.style.transform = `translate3d(${pointer.x}px, ${pointer.y}px, 0) translate(-4px, -4px) scale(${dotScale.toFixed(3)})`;
         dot.style.width = `${s.dotSize}px`;
         dot.style.height = `${s.dotSize}px`;
       }
@@ -384,6 +384,7 @@ const TargetCursor = ({
 };
 
 export default TargetCursor;
+
 
 
 
