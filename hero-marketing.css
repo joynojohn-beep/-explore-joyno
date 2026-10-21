@@ -9,3 +9,10 @@ body.is-standard .standard-hero>.primary{background:#4336cd;color:#fff;border-ra
 body.is-standard .standard-hero>.text-link{display:block;width:max-content;margin:20px 0 0;text-decoration:underline;text-underline-offset:6px}
 body.is-standard .standard-hero>*{position:relative;z-index:1}
 @media(max-width:700px){body.is-standard .standard-hero{width:calc(100% - 24px);margin:12px auto;padding:42px 24px 40px}body.is-standard .standard-hero h1{font-size:41px;letter-spacing:-2.4px}body.is-standard .standard-hero:after{font-size:240px;right:-65px;bottom:-30px;opacity:.16}body.is-standard .standard-hero>p{font-size:13px}}
+/* Person-and-chair artwork replaces the decorative star. */
+body.is-standard .standard-hero:after{display:none!important}
+body.is-standard .standard-hero{padding-right:34%;min-height:500px}
+body.is-standard .standard-hero h1{font-size:clamp(40px,3.7vw,54px);letter-spacing:-2.5px}
+body.is-standard .standard-hero>.hero-chair-person{position:absolute;right:4px;bottom:6px;width:36%;height:auto;max-height:94%;object-fit:contain;object-position:center bottom;z-index:0;pointer-events:none;filter:drop-shadow(0 14px 10px #25213c20)}
+@media(max-width:1050px) and (min-width:701px){body.is-standard .standard-hero{padding-right:33%}body.is-standard .standard-hero h1{font-size:42px}body.is-standard .standard-hero>.hero-chair-person{width:34%}}
+@media(max-width:700px){body.is-standard .standard-hero{padding-right:24px;min-height:0}body.is-standard .standard-hero h1{font-size:41px}body.is-standard .standard-hero>.hero-chair-person{position:relative;right:auto;bottom:auto;display:block;width:min(100%,330px);max-height:none;margin:22px auto -15px;z-index:1}}
